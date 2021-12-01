@@ -1,7 +1,6 @@
 main{
     background-color: #192d3b;
-    padding-top: 50px;
-    height: 100vh;
+    padding: 50px; 
 }
 
 .my_navbar{
