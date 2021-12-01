@@ -1,10 +1,17 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+main{
+    background-color: #192d3b;
+    padding-top: 50px;
+    height: 100vh;
+}
+
 .my_navbar{
     height: 80px;
     width: 100%;
-    background-color: blue;
+    background-color: #2b3a46;
+}
+.my_card{
+    background-color: #2b3a46;
+}
+h5, p{
+    color: white;
 }

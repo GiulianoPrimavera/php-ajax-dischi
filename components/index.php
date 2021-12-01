@@ -61,11 +61,11 @@ $dischi = [
 
                         echo "
                         <div class='col'>
-                            <div class='card'>
+                            <div class='card my_card'>
                                 <img class='card-img-top p-4' src='$url'>
                                 <div class='card-body'>
                                     <h5 class='card-title'>$nome</h5>
-                                    <h6 class='card-subtitle'>$artista</h6>
+                                    <p class='card-subtitle'>$artista</p>
                                 </div>
                             </div>
                         </div>
