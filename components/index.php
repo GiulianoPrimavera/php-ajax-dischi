@@ -1,33 +1,33 @@
 <?php
 $dischi = [
     [
-        "nomeDisco" => "nome disco",
-        "immagine" => "url immagine",
-        "nomeArtista" => "nome artista",
+        "immagine" => "https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg",  
+        "nomeDisco" => 'New Jersey', 
+        "nomeArtista" => 'Bon Jovi',
         "annoDiPubblicazione" => "anno di pubblicazione",
     ],
     [
-        "nomeDisco" => "nome disco",
-        "immagine" => "url immagine",
-        "nomeArtista" => "nome artista",
+        "immagine" => "https://cdn2.jazztimes.com/2018/05/SteveGadd-800x723.jpg",
+        "nomeDisco" => "Ten's Summoner's Tales",
+        "nomeArtista" => 'Sting',
         "annoDiPubblicazione" => "anno di pubblicazione",
     ],
     [
-        "nomeDisco" => "nome disco",
-        "immagine" => "url immagine",
-        "nomeArtista" => "nome artista",
+        "immagine" => "https://images-na.ssl-images-amazon.com/images/I/41JD3CW65HL.jpg",
+        "nomeDisco" => 'Steve Gadd Band', 
+        "nomeArtista" => 'Steve Gadd Band',
         "annoDiPubblicazione" => "anno di pubblicazione",
     ],
     [
-        "nomeDisco" => "nome disco",
-        "immagine" => "url immagine",
-        "nomeArtista" => "nome artista",
+        "immagine" => "https://images-na.ssl-images-amazon.com/images/I/810nSIQOLiL._SY355_.jpg",
+        "nomeDisco" => 'Brave new World',
+        "nomeArtista" => 'Iron Maiden',
         "annoDiPubblicazione" => "anno di pubblicazione",
     ],
     [
-        "nomeDisco" => "nome disco",
-        "immagine" => "url immagine",
-        "nomeArtista" => "nome artista",
+        "immagine" => "https://upload.wikimedia.org/wikipedia/en/9/97/Eric_Clapton_OMCOMR.jpg",
+        "nomeDisco" => 'One more car, one more raider', 
+        "nomeArtista" => 'Eric Clapton',
         "annoDiPubblicazione" => "anno di pubblicazione",
     ],
 ];
@@ -43,7 +43,6 @@ $dischi = [
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
     
 </head>
@@ -59,15 +58,14 @@ $dischi = [
                         $nome = $disco["nomeDisco"];
                         $url = $disco["immagine"];
                         $artista = $disco["nomeArtista"];
-                        $anno = $disco["immagine"];
 
                         echo "
                         <div class='col'>
                             <div class='card'>
-                                <img class='card-img-top' src='...'>
+                                <img class='card-img-top p-4' src='$url'>
                                 <div class='card-body'>
-                                    <h5 class='card-title'>Card title</h5>
-                                    <h6 class='card-subtitle'>Card subtitle</h6>
+                                    <h5 class='card-title'>$nome</h5>
+                                    <h6 class='card-subtitle'>$artista</h6>
                                 </div>
                             </div>
                         </div>
@@ -77,6 +75,5 @@ $dischi = [
             </div>
         </div>
     </main>
-<script src="../script.js"></script>
 </body>
 </html>
