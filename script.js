@@ -7,9 +7,9 @@ new Vue ({
     },
     mounted(){
         axios.get("http://localhost/esercizi/php-ajax-dischi/api/api.php").then((resp) => {
-            console.log(resp);
-            /* this.dataDisc = resp.listaDischi;
-            console.log(this.dataDisc); */
+            // console.log(resp.data.listaDischi);
+            this.dataDisc = resp.data.listaDischi;
+            console.log(this.dataDisc);
         })
     }
 })
