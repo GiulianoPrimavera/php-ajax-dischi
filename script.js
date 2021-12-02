@@ -6,10 +6,10 @@ new Vue ({
         ]
     },
     mounted(){
-        axios.get("https://flynn.boolean.careers/exercises/api/array/music").then((resp) => {
-            console.log(resp.data.response);
-            this.dataDisc = resp.data.response;
-            console.log(this.dataDisc);
+        axios.get("http://localhost/esercizi/php-ajax-dischi/api/api.php").then((resp) => {
+            console.log(resp);
+            /* this.dataDisc = resp.listaDischi;
+            console.log(this.dataDisc); */
         })
     }
 })
